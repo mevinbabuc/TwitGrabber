@@ -7,12 +7,6 @@ Author   : Mevin Babu
 Email    : mevinbabuc@gmail.com
 _____________________________________________________________________
 
-TOC
-
-1. Introduction
-2. Working
-3. Issues
-
 1. Introduction
 
       TwitGrabber provides a UI for the twitters search API.It was made as an aid for grabbing the data from twitter based on user input .The grabbed data is stored
