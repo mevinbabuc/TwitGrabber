@@ -18,7 +18,14 @@ _____________________________________________________________________
       TwitGrabber makes use of the twitter API for pulling data. The pulled unique tweets are added to the database.
       TwitGrabber is coded in Php and uses mySQL for storing data.The Database Schema is optimized for FullText search.
       
-3. Issues
+3. Files
+
+      a)    index.php
+      b)    classify.php
+      c)    readme.md
+
+4. Issues
   
-      -> unable to get continous results from twitter
-      -> Cleaner UI
+      -> Unable to get continous results from twitter
+      -> Bad UI
+      -> The form submission part for the classifier is still pending (classify.php)
