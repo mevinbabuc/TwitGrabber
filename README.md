@@ -21,11 +21,30 @@ _____________________________________________________________________
 3. Files
 
       a)    index.php
+                  
+                  index.php file extracts the recent tweets from twitter based on the search query issued and stores it
+                  in a database (mysql)
+                  
       b)    classify.php
-      c)    readme.md
+                  
+                  The classify.php file puts up an interface for manual, supervised teaching which displays the tweets
+                  on screen and asks the "teacher" to manually classify it if its a positive tweet or negative tweet or
+                  a neutral tweet. the positive , negative and neutral tweets are given 1,-1,0 values respectively to
+                  distinguish from each other .
+                  
+      c)    database/maclearn.sql
+      
+                  The maclearn.sql file is the database file used in TwitGrabber. import it into a mysql database
+                  
+      d)    readme.md
 
-4. Issues
-  
-      -> Unable to get continous results from twitter
-      -> Bad UI
-      -> The form submission part for the classifier is still pending (classify.php)
+4. Future Scope
+
+      a) The python version of the Twitgrabber is going to be released soon .
+      b) The Twitgrabber wil be designed to act as a datasource module or plugin for other projects .
+      
+5. Issues
+
+      a) Unable to get continous results from twitter
+      b) Bad UI
+      c) The form submission part for the classifier is still pending (classify.php)
