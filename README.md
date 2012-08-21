@@ -35,8 +35,12 @@ _____________________________________________________________________
       c)    database/maclearn.sql
       
                   The maclearn.sql file is the database file used in TwitGrabber. import it into a mysql database
+      
+      d)    css/main.css
+            
+                  The stylesheet for the webpages
                   
-      d)    readme.md
+      e)    readme.md
 
 4. Future Scope
 
