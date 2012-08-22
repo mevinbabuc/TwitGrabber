@@ -21,6 +21,7 @@ if (isset($_GET['q']) || isset($_GET['refresh_url'])) {
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Machine Learning !</title>
+        <link href="../css/main.css" res="stylesheet" type="text/css">
     </head>
     <body>
         <h1>MachineLearning </h1>
