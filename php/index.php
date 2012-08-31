@@ -24,6 +24,7 @@ if (isset($_GET['q']) || isset($_GET['refresh_url'])) {
         <link href="../css/main.css"  rel="stylesheet" type="text/css" />
     </head>
     <body>
+        <div id="container">
         <h1>MachineLearning </h1>
         <a href="index.php">Get Data </a> <a href="classify.php"> Classify</a> <a href="../pasteit/">Paste It !</a>
         <form name="twit-search" action="index.php" action="get">
@@ -62,6 +63,7 @@ if (isset($_GET['q']) || isset($_GET['refresh_url'])) {
             }
             }
             ?>
+        </div>
         </div>
     </body>
 </html>
