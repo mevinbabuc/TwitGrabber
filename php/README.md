@@ -29,3 +29,4 @@ _____________________________________________________________________
       -> Unable to get continous results from twitter
       -> Bad UI
       -> The form submission part for the classifier is still pending (classify.php)
+	  -> Setup file for automatic database creation
