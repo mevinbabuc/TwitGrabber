@@ -40,26 +40,26 @@ if (isset($_GET['q']) || isset($_GET['refresh_url'])) {
 
             <?php
             $result = array();
-            $refresh_url="";
+            $refresh_url = "";
             if (isset($data)) {
                 $json = json_decode($data, true);
                 $result = $json['results'];
-                $refresh_url=$json['refresh_url'];
+                $refresh_url = $json['refresh_url'];
                 ?>
                 <input type="text" name="refresh_url" size="50" value="<?php echo $refresh_url; ?>" />
             <?php } ?>
         </form>
         <div>
             <?php
-            if(isset($result)){
-            $con = mysql_pconnect("localhost", "root", "") or die("Could not connect" . mysql_error);
-            mysql_select_db("maclearn");
-            foreach ($result as $key => $res) {
-                echo "$key <b style='color:blue;'>" . $res['created_at'] . "</b>:<i style='color:red'>" . $res['text'] . "</i><br>";
-                $sql = "insert into twit_search(refresh_url,created_at,tweet) values('$refresh_url','{$res['created_at']}','" . filter_var($res['text'], FILTER_SANITIZE_STRING) . "')";
-                mysql_query($sql);
-                echo mysql_error() . "<br>";
-            }
+            if (isset($result)) {
+                $con = mysql_pconnect("localhost", "root", "") or die("Could not connect" . mysql_error);
+                mysql_select_db("maclearn");
+                foreach ($result as $key => $res) {
+                    echo "$key <b style='color:blue;'>" . $res['created_at'] . "</b>:<i style='color:red'>" . $res['text'] . "</i><br>";
+                    $sql = "insert into twit_search(refresh_url,created_at,tweet) values('$refresh_url','{$res['created_at']}','" . filter_var($res['text'], FILTER_SANITIZE_STRING) . "')";
+                    mysql_query($sql);
+                    echo mysql_error() . "<br>";
+                }
             }
             ?>
         </div>
