@@ -79,14 +79,44 @@ body{
 /* NAVIGATION (close) */
 
 h1{
-    font-size: 35px;
+    font-size: 3em;
+    word-spacing: 10px;
     background-color:#CC3333;
     color:#FFF;
-    font-size:12px; 
     padding:9px 16px;
     text-transform:uppercase; 
     display:block;
+    text-shadow: 1px 2px 2px black;
+    z-index: 5;
+    position: relative;
 }
+
+#container{
+    background: black;
+    color: white;
+    height: 80%;
+    width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+nav a{
+    background: white;
+    box-shadow: 0 2px 2px grey;
+    padding: 15px;
+    padding-top: 20px;
+    border-radius: 20%;
+    margin: 10px;
+    color: darkred;
+    text-decoration: none;
+    position: relative;
+}
+nav a:hover{
+    color:black;
+    box-shadow: 0 2px 10px grey;
+}
+
+
 /* CONTENT TEXT */
 
 
@@ -99,11 +129,7 @@ h1{
 
 /*
 Z-INDEX
-    #background ---  1
-    #contents -----  5
-    #contents div--  6
-    #nav ----------  10
-    #overlay-------  10
+    #header ---  5
 */
 
 
