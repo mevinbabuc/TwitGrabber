@@ -5,7 +5,7 @@ TwitGrabber comes up with an interface making it easy to classify tweets accordi
 _______________________________________________________________________
 
 author    : mevinbabuc@gmail.com
-developers: anenth.us@gmail.com
+developers: anenthvishnu@gmail.com
 _______________________________________________________________________
 
 Php and python wrapper for the Twitter search API !
